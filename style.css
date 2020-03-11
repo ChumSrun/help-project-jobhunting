@@ -1,0 +1,202 @@
+.stepParag {
+  text-indent: 50px;
+  font-size: 20px
+}
+
+.active {
+  border-bottom: 2px solid teal;
+}
+
+/* h3 {
+  margin: 20px 0;
+} */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+
+.content {
+  margin-bottom: 50px;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.backgrounColorWhite {
+  background-color: white;
+}
+
+.navbar {
+  background-color: white !important
+}
+
+p {
+  font-size: 1.2em;
+  text-indent: 9%;
+}
+
+/* about me */
+.bottnLikDis {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 30px !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+#flexContainer {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bold {
+  position: absolute;
+  top: 1%;
+  left: 38%;
+  font-size: 250px;
+  color: #f0f0f0;
+  font-weight: 700;
+}
+
+
+
+/* rotate text */
+.rotate {
+  position: absolute;
+  top: 1.9em;
+  left: 190px;
+}
+
+.rotate .heading {
+  font-family: "Karla";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  position: relative;
+}
+
+.rotate .heading:after {
+  position: absolute;
+  top: 8px;
+  right: -40px;
+  content: '';
+  background: #000;
+  width: 40px;
+  height: 1px;
+}
+
+#introduc:after {
+  border: 1px solid red;
+  content: "";
+  top: 80px;
+  left: 290px;
+  position: absolute;
+  width: 400px;
+  background-color: green;
+}
+
+#meImage {
+  width: 120%;
+  height: 500px;
+}
+
+.containerDetialAbout {
+  margin-top: 70px;
+  font-family: sans-serif
+}
+
+.textName {
+  font-size: 3.7em;
+  margin-left: 19%;
+  margin-top: -17%
+}
+
+.wrapAbout {
+  padding-right: 0;
+  margin-left: 30%;
+  padding-top: 2%;
+}
+
+.introDetail {
+  margin: 6% 0;
+  font-size: 1.7em;
+}
+
+#btnViewWorks {
+  border-radius: 3px !important;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #meImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .textName {
+    font-size: 2em;
+
+    margin-left: 0%;
+    margin-top: 0%
+  }
+
+  .wrapAbout {
+    padding-right: 0;
+    margin-left: 0%;
+    padding-top: 0%;
+  }
+
+  .bold {
+    position: static;
+    text-align: center;
+    font-size: 3em;
+    color: teal;
+    font-weight: 700;
+  }
+
+  .containerDetialAbout {
+    margin-top: 1em;
+    font-family: sans-serif
+  }
+
+  #introduc:after {
+    border: 0px solid red;
+  }
+
+  .introDetail {
+    margin: 1em 0;
+    font-size: 1em;
+  }
+
+  #flexContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  #btnViewWorks {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+}
